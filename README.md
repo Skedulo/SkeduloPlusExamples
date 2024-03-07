@@ -8,7 +8,7 @@ The following extensions are available:
 
 ### Hello World
 
-A simple example with the bare minimum, displays a single field from the `Jobs` object.
+A simple example with the bare minimum, displays some example text.
 
 ### TBC
 
