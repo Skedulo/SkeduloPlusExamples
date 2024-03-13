@@ -10,9 +10,9 @@ The following extensions are available:
 
 A simple example with the bare minimum, displays some example text.
 
-### TBC
+### Job Products
 
-A practical example, allowing the user to upload a photo to a Product record, related to a Job.
+A practical example, allowing the user to attach a photo to a Job Product record.
 
 ### Kitchen Sink
 
