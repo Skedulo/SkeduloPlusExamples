@@ -1,0 +1,13 @@
+{
+    "summary": "Allows you to manage Job Products",
+    "email": "",
+    "revisionCount": 1,
+    "contextObject": "Jobs",
+    "bundleId": "",
+    "displayOrder": 0,
+    "templateId": "",
+    "hasAttachments": ["JobProduct"],
+    "references": {
+      "JobProducts": ["Product"]
+    }
+  }
