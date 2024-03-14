@@ -14,7 +14,7 @@ This form doesn't require any customisation within Skedulo, and should be used a
 
 ### Example
 
-![Screenshot of the Hello World mobile extension](images/hello-world.jpg)
+![Screenshot of the Hello World mobile extension](/images/hello-world.jpg)
 
 ### Job Products
 
@@ -24,9 +24,9 @@ This form assumes you have configured Products in Skedulo and have created "Note
 
 ### Example
 
-![Screenshot of the Job Products mobile extension main screen](images/job-products.jpg)
+![Screenshot of the Job Products mobile extension main screen](/images/job-products.jpg)
 
-![Screenshot of the Job Products mobile extension add product screen](images/add-product.jpg)
+![Screenshot of the Job Products mobile extension add product screen](/images/add-product.jpg)
 
 ### Kitchen Sink
 
