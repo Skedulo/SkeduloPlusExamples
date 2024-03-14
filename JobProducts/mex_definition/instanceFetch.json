@@ -8,6 +8,8 @@
       "ProductName",
       "Qty",
       "CreatedDate",
+      "Notes",
+      "SerialNumber",
       "JobId",
       "Product.UID",
       "Product.Description",

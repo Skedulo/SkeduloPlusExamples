@@ -3,7 +3,7 @@
     "JobProductListPages": {
       "JobProductTitle": "Products",
       "ItemTitle": "${item.Product.Name}",
-      "ItemCaption": "Quantity: ${item.Qty}\nDate added: ${dateFormat(item.CreatedDate)}",
+      "ItemCaption": "Serial: ${item.SerialNumber}\nDate added: ${dateFormat(item.CreatedDate)}",
       "Empty": "You don't have any Products related to this job yet.",
       "Add": "Add product",
       "SearchPlaceholder": "Search for Products"
@@ -30,7 +30,12 @@
       "ConfirmDeleteDescription": "Are you sure that you wish to remove this Product, this can not be undone",
       "ConfirmDeleteYesButton": "Yes",
       "ConfirmDeleteNoButton": "No",
-      "CreatedDate": "Created Date"
+      "CreatedDate": "Created Date",
+      "NotesHint": "Enter any notes related to this product",
+      "Notes": "Notes",
+      "SerialNumber": "Product Serial Number",
+      "SerialNumberHint": "Use your device's camera to scan the serial number",
+      "SerialNumberMustBeEntered": "You must enter or scan a serial number"
     },
     "JobProductSelectPage": {
       "Title": "Select a Product",
