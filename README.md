@@ -1,10 +1,10 @@
 # Skedulo Plus Examples
 
-A set of example Skedulo Plus Mobile Extensions.
+A set of example Skedulo Plus Mobile Extensions, to be deployed with the Skedulo CLI.
 
 ## Extensions
 
-The following extensions are available:
+The following example extensions are available: Hello World, Job Products, Kitchen Sink. These extensions are detailed below
 
 ### Hello World
 
@@ -20,7 +20,7 @@ This form doesn't require any customisation within Skedulo, and should be used a
 
 A practical example, allowing the user to attach a photo to a Job Product record.
 
-This form assumes you have configured Products in Skedulo and have created "Notes" and "Serial Number" fields on the Job Product object.
+This form assumes you have configured Products in Skedulo and have created "Notes"(`Notes`) and "Serial Number"(`SerialNumber`) fields on the Job Product object. For more infomration on how to create these, see the [skedulo docs](https://docs.skedulo.com/developer-guides/customize-and-extend/create-and-customize-forms-objects-fields/create-custom-objects-and-fields/create-custom-objects-and-fields-in-pulse-platform/).
 
 #### Example
 
