@@ -24,8 +24,10 @@ This form assumes you have configured Products in Skedulo and have created "Note
 
 ### Example
 
+<p float="left">
 <img src="/images/job-products.jpg" width="200">
 <img src="/images/add-product.jpg" width="200">
+</p>
 
 ### Kitchen Sink
 
