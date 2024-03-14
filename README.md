@@ -14,7 +14,7 @@ This form doesn't require any customisation within Skedulo, and should be used a
 
 ### Example
 
-![Screenshot of the Hello World mobile extension](/images/hello-world.jpg)
+<img src="/images/hello-world.jpg" width="200">
 
 ### Job Products
 
