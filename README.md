@@ -24,9 +24,8 @@ This form assumes you have configured Products in Skedulo and have created "Note
 
 ### Example
 
-![Screenshot of the Job Products mobile extension main screen](/images/job-products.jpg)
-
-![Screenshot of the Job Products mobile extension add product screen](/images/add-product.jpg)
+<img src="/images/job-products.jpg" width="200">
+<img src="/images/add-product.jpg" width="200">
 
 ### Kitchen Sink
 
