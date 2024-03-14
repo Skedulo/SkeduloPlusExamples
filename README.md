@@ -12,7 +12,7 @@ A simple example with the bare minimum, displays some example text.
 
 This form doesn't require any customisation within Skedulo, and should be used as a base for creating new mobile extensions.
 
-### Example
+#### Example
 
 <img src="/images/hello-world.jpg" width="200">
 
@@ -22,7 +22,7 @@ A practical example, allowing the user to attach a photo to a Job Product record
 
 This form assumes you have configured Products in Skedulo and have created "Notes" and "Serial Number" fields on the Job Product object.
 
-### Example
+#### Example
 
 <p float="left">
 <img src="/images/job-products.jpg" width="200">
@@ -32,6 +32,10 @@ This form assumes you have configured Products in Skedulo and have created "Note
 ### Kitchen Sink
 
 An example containing all available components, intented only as a showcase.
+
+#### Example
+
+TBC
 
 ## Usage
 
