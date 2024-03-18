@@ -82,7 +82,6 @@
         },
         {
           "type": "textEditor",
-          "keyboardType": "number-pad",
           "valueExpression": "pageData.SerialNumber",
           "title": "form.UpsertJobProductPage.SerialNumber",
           "placeholder": "form.UpsertJobProductPage.SerialNumberHint",

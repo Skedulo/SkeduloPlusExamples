@@ -1,0 +1,135 @@
+{
+  "pages": {
+    "ProductListPage": {
+      "title": "form.ProductListPages.ProductTitle",
+      "type": "list",
+      "addNew": {
+        "text": "form.ProductListPages.Add",
+        "destinationPage": "UpsertProductPage",
+        "defaultData": {
+          "data": {
+            "CreatedDate": "${now()}"
+          },
+          "objectName": "Products"
+        }
+      },
+      "defaultPageData": {
+        "data": {
+          "UID": "${pageData.UID}"
+        },
+        "objectName": "Products"
+      },
+      "sourceExpression": "formData.Products",
+      "emptyText": "form.ProductListPages.Empty",
+      "search": {
+        "placeholder": "form.ProductListPages.SearchPlaceholder",
+        "filterOnProperties": ["Name", "Description"]
+      },
+      "itemLayout": {
+        "type": "titleAndCaption",
+        "title": "form.ProductListPages.ItemTitle",
+        "caption": "form.ProductListPages.ItemCaption"
+      },
+      "itemClickDestination": "UpsertProductPage"
+    },
+    "UpsertProductPage": {
+      "type": "flat",
+      "upsert": {
+        "insertTitle": "form.UpsertProductPage.AddProduct",
+        "updateTitle": "form.UpsertProductPage.EditProduct",
+        "insertButtonText": "form.UpsertProductPage.Add",
+        "updateButtonText": "form.UpsertProductPage.Update",
+        "defaultDataForNewObject": {
+          "CreatedDate": "${now()}"
+        },
+        "validator": [],
+        "saveDraft": {
+          "askWhenBack": true
+        }
+      },
+      "delete": {
+        "canDeleteExpression": "converters.data.isTempUID(pageData) == false",
+        "text": "form.UpsertProductPage.DeleteProduct",
+        "confirm": {
+          "title": "form.UpsertProductPage.ConfirmDeleteTitle",
+          "description": "form.UpsertProductPage.ConfirmDeleteDescription",
+          "yesBtn": "form.UpsertProductPage.ConfirmDeleteYesButton",
+          "noBtn": "form.UpsertProductPage.ConfirmDeleteNoButton"
+        }
+      },
+      "saveDraft": {
+        "askWhenBack": true
+      },
+      "items": [
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Name",
+          "title": "form.UpsertProductPage.Name",
+          "placeholder": "form.UpsertProductPage.NameHint",
+          "validator": [
+              {
+                  "type": "expression",
+                  "errorMessage": "form.UpsertProductPage.NameMustBeEntered",
+                  "expression": "pageData.Name != null"
+              }
+          ]
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Description",
+          "title": "form.UpsertProductPage.Description",
+          "placeholder": "form.UpsertProductPage.DescriptionHint",
+          "validator": [
+            {
+              "type": "expression",
+              "errorMessage": "form.UpsertProductPage.DescriptionMustBeEntered",
+              "expression": "pageData.Description != null"
+            }
+          ]
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Family",
+          "title": "form.UpsertProductPage.Family",
+          "placeholder": "form.UpsertProductPage.FamilyHint",
+          "validator": [
+            {
+              "type": "expression",
+              "errorMessage": "form.UpsertProductPage.FamilyMustBeEntered",
+              "expression": "pageData.Family != null"
+            }
+          ]
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.ProductCode",
+          "title": "form.UpsertProductPage.ProductCode",
+          "placeholder": "form.UpsertProductPage.ProductCodeHint",
+          "validator": [
+              {
+                  "type": "expression",
+                  "errorMessage": "form.UpsertProductPage.ProductCodeMustBeEntered",
+                  "expression": "pageData.ProductCode != null"
+              }
+          ],
+          "features": {
+            "useBarcodeAndQRScanner": true
+          }
+        },
+        {
+          "type": "attachmentsEditor",
+          "sourceExpression": "pageData",
+          "title": "form.UpsertProductPage.AddAttachment",
+          "validator": [
+            {
+              "type": "expression",
+              "expression": "attachments.length > 0",
+              "errorMessage": "form.UpsertProductPage.AttachmentRequired"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "firstPage": "ProductListPage"
+}

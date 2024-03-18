@@ -1,0 +1,43 @@
+{
+  "form": {
+    "ProductListPages": {
+      "ProductTitle": "Products",
+      "ItemTitle": "${item.Name} (${item.ProductCode})" ,
+      "ItemCaption": "${item.Description}\nDate added: ${dateFormat(item.CreatedDate)}",
+      "Empty": "You don't have any Products related to this job yet.",
+      "Add": "Add product",
+      "SearchPlaceholder": "Search for Products"
+    },
+    "UpsertProductPage": {
+      "AddAttachment": "Add Attachment",
+      "AttachmentRequired": "You must upload an image of the product",
+      "Name": "Name",
+      "NameHint": "Enter the product name",
+      "NameMustBeEntered": "You must enter a product name",
+      "Family": "Product Family",
+      "FamilyHint": "Enter the product family",
+      "AddProduct": "Add Product",
+      "EditProduct": "Edit Product",
+      "Product": "Product",
+      "Add": "Add",
+      "Update": "Save",
+      "DeleteProduct": "Remove Product",
+      "ConfirmDeleteTitle": "Remove product",
+      "ConfirmDeleteDescription": "Are you sure that you wish to remove this product? This can not be undone",
+      "ConfirmDeleteYesButton": "Yes",
+      "ConfirmDeleteNoButton": "No",
+      "CreatedDate": "Created Date",
+      "DescriptionHint": "Enter a description of this product",
+      "Description": "Description",
+      "ProductCode": "Product Serial Number",
+      "ProductCodeHint": "Use your device's camera to scan the product code",
+      "ProductCodeMustBeEntered": "You must enter or scan a product code"
+    },
+    "JobProductSelectPage": {
+      "Title": "Select a Product",
+      "ItemTitle": "${item.Name}",
+      "ItemCaption": "${item.Description}",
+      "Empty": "No Products Found"
+    }
+  }
+}
