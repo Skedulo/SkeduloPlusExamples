@@ -82,22 +82,6 @@
         },
         {
           "type": "textEditor",
-          "valueExpression": "pageData.SerialNumber",
-          "title": "form.UpsertJobProductPage.SerialNumber",
-          "placeholder": "form.UpsertJobProductPage.SerialNumberHint",
-          "validator": [
-              {
-                  "type": "expression",
-                  "errorMessage": "form.UpsertJobProductPage.SerialNumberMustBeEntered",
-                  "expression": "pageData.SerialNumber != null"
-              }
-          ],
-          "features": {
-            "useBarcodeAndQRScanner": true
-          }
-        },
-        {
-          "type": "textEditor",
           "keyboardType": "number-pad",
           "valueExpression": "pageData.Qty",
           "title": "form.UpsertJobProductPage.Quantity",
@@ -109,12 +93,6 @@
               "expression": "pageData.Qty > 0 && pageData.Qty <= 1000"
             }
           ]
-        },
-        {
-          "type": "textEditor",
-          "valueExpression": "pageData.Notes",
-          "title": "form.UpsertJobProductPage.Notes",
-          "placeholder": "form.UpsertJobProductPage.NotesHint"
         },
         {
           "type": "attachmentsEditor",
