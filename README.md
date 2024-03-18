@@ -16,18 +16,24 @@ This form doesn't require any customisation within Skedulo, and should be used a
 
 <img src="/images/hello-world.jpg" width="200">
 
-### Job Products
+### Add Products
 
-A practical example, allowing the user to attach a photo to a Job Product record.
-
-This form assumes you have configured Products in Skedulo and have created "Notes"(`Notes`) and "Serial Number"(`SerialNumber`) fields on the Job Product object. For more infomration on how to create these, see the [skedulo docs](https://docs.skedulo.com/developer-guides/customize-and-extend/create-and-customize-forms-objects-fields/create-custom-objects-and-fields/create-custom-objects-and-fields-in-pulse-platform/).
+A practical example, allows the user to add Product records for use in the Job Products extension below. 
 
 #### Example
 
-<p float="left">
-<img src="/images/job-products.jpg" width="200">
-<img src="/images/add-product.jpg" width="200">
-</p>
+<img src="/images/hello-world.jpg" width="200">
+
+
+### Job Products
+
+A practical example, allowing the user to create and update Job Product records, and attach images.
+
+Requires Product records to be created using the "Add Products" extension detailed above.
+
+#### Example
+
+<img src="/images/hello-world.jpg" width="200">
 
 ### Kitchen Sink
 
