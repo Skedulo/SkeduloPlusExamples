@@ -3,7 +3,7 @@
     "JobProductListPages": {
       "JobProductTitle": "Products",
       "ItemTitle": "${item.Product.Name}",
-      "ItemCaption": "Serial: ${item.SerialNumber}\nDate added: ${dateFormat(item.CreatedDate)}",
+      "ItemCaption": "Quantity: ${item.Qty}\nDate added: ${dateFormat(item.CreatedDate)}",
       "Empty": "You don't have any Products related to this job yet.",
       "Add": "Add product",
       "SearchPlaceholder": "Search for Products"
