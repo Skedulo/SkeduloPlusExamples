@@ -1,0 +1,41 @@
+{
+  "JobProductListPage": {
+    "JobProductTitle": "Job Products",
+    "ItemTitle": "${item.Product.Name}",
+    "ItemCaption": "Qty: ${item.Qty}\nDate added: ${dateFormat(item.CreatedDate)}",
+    "Empty": "There is no job products yet.",
+    "Add": "Add product",
+    "SearchPlaceholder": "Search for Job Products"
+  },
+  "UpsertJobProductPage": {
+    "Quantity": "Qty",
+    "QuantityHint": "Enter product quantity",
+    "AddProduct": "Add Job Product",
+    "EditProduct": "Edit Job Product",
+    "QuantityMustBeAbove0": "Quantity must be greater than 0 and less than or equal to 1000",
+    "QuantityMustBeBelow10": "Quantity must be below 10",
+    "SelectProduct": "Product",
+    "SearchProduct": "Search product",
+    "SelectProductHint": "Search",
+    "SelectProductDescription": "${pageData.Product.Description}",
+    "DescriptionTitle": "Description",
+    "BatchNumber": "Batch number",
+    "BatchNumberHint": "Enter batch number",
+    "BatchNumberMustBeBelow255": "Batch number length can't exceed 255",
+    "Add": "Add",
+    "Update": "Save",
+    "JobProductIsRequired": "Job Product is required",
+    "DeleteJobProduct": "Delete Job Product",
+    "ConfirmDeleteTitle": "Remove product",
+    "ConfirmDeleteDescription": "Are you sure that you want to remove this job product. This action can't be undo.",
+    "ConfirmDeleteYesButton": "Yes",
+    "ConfirmDeleteNoButton": "No",
+    "CreatedDate": "Created Date"
+  },
+  "JobProductSelectPage": {
+    "Title": "Search product",
+    "ItemTitle": "${item.Name}",
+    "ItemCaption": "${item.Description}",
+    "Empty": "No Job Products"
+  }
+}

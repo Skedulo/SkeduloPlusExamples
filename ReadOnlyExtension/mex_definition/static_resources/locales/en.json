@@ -1,0 +1,22 @@
+{
+  "ProductListPage": {
+    "Title": "Product list page",
+    "ItemTitle": "${item.Name}",
+    "ItemCaption": "${item.Description}",
+    "Empty": "There are no products",
+    "TagValue": "Active",
+    "HeaderTitle": "Product list",
+    "HeaderDescription": "50 newest products"
+  },
+  "ProductDetailPage": {
+    "Title": "Product detail page",
+    "HeaderTitle": "${pageData.Name}",
+    "TagValue": "Active",
+    "DescriptionTitle": "Description",
+    "DescriptionText": "${pageData.Description}",
+    "ProductCodeTitle": "Product code",
+    "ProductCodeText": "${pageData.ProductCode}",
+    "CreatedDateTitle": "Created date",
+    "CreatedDateText": "${dateFormat(pageData.CreatedDate)}"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Single Submit Extension: Create Product",
+  "defId": "Single_Submit_Extension_Create_Product",
+  "engineVersion": "1.0.0",
+  "customFunctionFeatures": {
+    "fetchFunction": false,
+    "saveFunction": false
+  }
+}

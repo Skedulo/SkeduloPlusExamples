@@ -1,0 +1,61 @@
+{
+  "firstPage": "AddProductPage",
+  "pages": {
+    "AddProductPage": {
+      "title": "AddProductPage.Title",
+      "type": "flat",
+      "wipeExistingData": true,
+      "pageDataExpression": "formData.Product",
+      "defaultPageData": {
+        "data": {},
+        "objectName": "Products"
+      },
+      "upsert": {
+        "validator": [],
+        "saveDraft": {
+          "askWhenBack": true
+        }
+      },
+      "items": [
+        {
+          "type": "textEditor",
+          "mandatory": true,
+          "valueExpression": "pageData.Name",
+          "title": "AddProductPage.Name",
+          "placeholder": "AddProductPage.NameHint",
+          "validator": [
+            {
+              "type": "expression",
+              "errorMessage": "AddProductPage.NameIsRequired",
+              "expression": "pageData.Name && pageData.Name.length > 0"
+            }
+          ]
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Description",
+          "title": "AddProductPage.Description",
+          "placeholder": "AddProductPage.DescriptionHint",
+          "validator": []
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.ProductCode",
+          "title": "AddProductPage.ProductCode",
+          "placeholder": "AddProductPage.ProductCodeHint",
+          "validator": []
+        },
+        {
+          "type": "toggleEditor",
+          "mode": "switch",
+          "items": [
+            {
+              "valueExpression": "pageData.IsActive",
+              "text": "AddProductPage.IsActive"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

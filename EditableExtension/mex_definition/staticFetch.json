@@ -1,0 +1,13 @@
+{
+  "type": "GraphQl",
+  "Products": {
+    "object": "Products",
+    "fields": [
+      "UID",
+      "Name",
+      "Description"
+    ],
+    "filter": "",
+    "variables": {}
+  }
+}
