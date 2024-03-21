@@ -1,0 +1,8 @@
+{
+  "type": "GraphQl",
+  "Products": {
+    "object": "Products",
+    "fields": ["Name", "Description", "UID"],
+    "filter": "(Name LIKE '%${searchText}%' OR Description LIKE '%${searchText}%')"
+  }
+}
