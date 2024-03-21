@@ -1,0 +1,9 @@
+{
+  "name": "UI Components Showcase",
+  "defId": "UI_Components_Showcase",
+  "engineVersion": "1.0.0",
+  "customFunctionFeatures": {
+    "fetchFunction": false,
+    "saveFunction": false
+  }
+}

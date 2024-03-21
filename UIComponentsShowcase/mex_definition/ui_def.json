@@ -1,0 +1,720 @@
+{
+  "firstPage": "LandingPage",
+  "readonly": true,
+  "pages": {
+    "LandingPage": {
+      "type": "flat",
+      "title": "form.ShowCasePage.Title",
+      "items": [
+        {
+          "type": "menuList",
+          "items": [
+            {
+              "icon": "calendar",
+              "text": "form.LandingPage.FlatPage",
+              "itemClickDestination": "FlatPage",
+              "badgeText": "ui.one"
+            },
+            {
+              "icon": "search",
+              "text": "form.LandingPage.ListPage",
+              "itemClickDestination": "ListPage",
+              "badgeText": "ui.two"
+            }
+          ]
+        }
+      ]
+    },
+    "FlatPage": {
+      "type": "flat",
+      "title": "form.ShowCasePage.Title",
+      "header": {
+        "title": "form.ShowCasePage.HeaderTitle",
+        "description": "form.ShowCasePage.HeaderDescription",
+        "tags": {
+          "items": [
+            {
+              "text": "ui.default",
+              "themeValueExpression": "default"
+            },
+            {
+              "text": "ui.success",
+              "themeValueExpression": "success"
+            },
+            {
+              "text": "ui.primary",
+              "themeValueExpression": "primary"
+            },
+            {
+              "text": "ui.warning",
+              "themeValueExpression": "warning"
+            },
+            {
+              "text": "ui.focus",
+              "themeValueExpression": "focus"
+            },
+            {
+              "text": "ui.danger",
+              "themeValueExpression": "danger"
+            },
+            {
+              "text": "ui.default_alt",
+              "themeValueExpression": "default_alt"
+            },
+            {
+              "text": "ui.success_alt",
+              "themeValueExpression": "success_alt"
+            },
+            {
+              "text": "ui.primary_alt",
+              "themeValueExpression": "primary_alt"
+            },
+            {
+              "text": "ui.warning_alt",
+              "themeValueExpression": "warning_alt"
+            },
+            {
+              "text": "ui.focus_alt",
+              "themeValueExpression": "focus_alt"
+            },
+            {
+              "text": "ui.danger_alt",
+              "themeValueExpression": "danger_alt"
+            }
+          ]
+        }
+      },
+      "pageDataExpression": "formData.ShowCaseObject",
+      "defaultPageData": {
+        "data": {
+          "SingleLineText": "Default string",
+          "FromDateTime": "${now('datetime')}",
+          "ToDateTime": "${now('datetime')}",
+          "JobId": "${metadata.contextObjectId}",
+          "Disabled": false
+        },
+        "objectName": "ShowCaseObject"
+      },
+      "upsert": {
+        "defaultDataForNewObject": {
+        },
+        "validator": [],
+        "saveDraft": {
+          "askWhenBack": true
+        }
+      },
+      "items": [
+        {
+          "type": "section",
+          "items": [
+            {
+              "type": "toggleEditor",
+              "mode": "switch",
+              "items": [
+                {
+                  "valueExpression": "pageData.Disabled",
+                  "text": "form.ShowCasePage.DisableAllControls"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "form.ShowCasePage.SectionTitle",
+          "body": "form.ShowCasePage.SectionBody",
+          "caption": "form.ShowCasePage.SectionCaption",
+          "items": [
+            {
+              "type": "textEditor",
+              "valueExpression": "pageData.SingleLineText",
+              "title": "form.ShowCasePage.SingleLineText",
+              "placeholder": "form.ShowCasePage.SingleLineTextHint",
+              "validator": [],
+              "features": {
+                "useBarcodeAndQRScanner": true
+              },
+              "caption": "form.ShowCasePage.EditorHint",
+              "readonly": "pageData.Disabled"
+            },
+            {
+              "type": "textEditor",
+              "valueExpression": "pageData.MultilineText",
+              "title": "form.ShowCasePage.MultilineText",
+              "placeholder": "form.ShowCasePage.MultilineTextHint",
+              "multiline": true,
+              "readonly": "pageData.Disabled",
+              "validator": [
+                {
+                  "type": "expression",
+                  "errorMessage": "form.ShowCasePage.MultiLineTextValidationHint",
+                  "expression": "pageData.MultilineText && pageData.MultilineText.length > 0 && pageData.MultilineText.length <= 30"
+                }
+              ],
+              "features": {
+                "useBarcodeAndQRScanner": true
+              },
+              "caption": "form.ShowCasePage.EditorHint"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "form.ShowCasePage.SelectorSection",
+          "items": [
+            {
+              "type": "selectEditor",
+              "title": "form.ShowCasePage.SelectProduct",
+              "structureExpression": "pageData.Product",
+              "valueExpression": "pageData.ProductId",
+              "sourceExpression": "sharedData.Products",
+              "displayExpression": "pageData.Product.Name",
+              "placeholder": "form.ShowCasePage.SelectProductHint",
+              "readonly": "pageData.Disabled",
+              "selectPage": {
+                "itemTitle": "form.ShowCasePage.SelectProductItemTitle",
+                "emptyText": "form.ShowCasePage.SelectProductEmpty",
+                "title": "form.ShowCasePage.SelectProductTitle",
+                "searchBar": {
+                  "filterOnProperties": [
+                    "Name"
+                  ]
+                }
+              },
+              "validator": [
+                {
+                  "type": "expression",
+                  "expression": "pageData.ProductId",
+                  "errorMessage": "form.ShowCasePage.SelectProductValidation"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint"
+            },
+            {
+              "type": "selectEditor",
+              "title": "form.ShowCasePage.SelectProductOnline",
+              "structureExpression": "pageData.Product",
+              "valueExpression": "pageData.ProductId",
+              "sourceExpression": "sharedData.Products",
+              "displayExpression": "pageData.Product.Name",
+              "placeholder": "form.ShowCasePage.SelectProductHint",
+              "readonly": "pageData.Disabled",
+              "onlineSource": {
+                "key": "Products",
+                "variables": {
+                }
+              },
+              "selectPage": {
+                "itemTitle": "form.ShowCasePage.SelectProductItemTitle",
+                "emptyText": "form.ShowCasePage.SelectProductEmpty",
+                "title": "form.ShowCasePage.SelectProductTitle",
+                "searchBar": {
+                  "filterOnProperties": [
+                    "Name"
+                  ]
+                }
+              },
+              "validator": [
+                {
+                  "type": "expression",
+                  "expression": "pageData.ProductId",
+                  "errorMessage": "form.ShowCasePage.SelectProductValidation"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint"
+            },
+            {
+              "type": "multiSelectEditor",
+              "title": "form.ShowCasePage.MultiSelectProduct",
+              "structureExpression": "pageData.ShowCaseMultiProducts",
+              "sourceExpression": "sharedData.Products",
+              "displayExpression": "item.ShowCaseProduct.Name",
+              "displayDataInSearchPageExpression": "item.ShowCaseProduct",
+              "placeholder": "form.ShowCasePage.MultiSelectProductHint",
+              "readonly": "pageData.Disabled",
+              "constructResultObject": {
+                "data": {
+                  "ShowCaseProduct": "${item}",
+                  "ShowCaseObjectId": "${pageData.UID}",
+                  "ShowCaseProductId": "${item.UID}"
+                },
+                "objectName": "ShowCaseMultiProduct",
+                "compareProperty": "ShowCaseProductId"
+              },
+              "selectPage": {
+                "itemTitle": "form.ShowCasePage.SelectProductItemTitle",
+                "emptyText": "form.ShowCasePage.SelectProductEmpty",
+                "title": "form.ShowCasePage.SelectProductTitle",
+                "searchBar": {
+                  "filterOnProperties": [
+                    "Name"
+                  ]
+                }
+              },
+              "validator": [],
+              "caption": "form.ShowCasePage.EditorHint"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "form.ShowCasePage.DateTimeSection",
+          "body": "form.ShowCasePage.DateTimeSectionDescription",
+          "readonly": "pageData.Disabled",
+          "items": [
+            {
+              "type": "dateTimeEditor",
+              "mode": "datetime",
+              "valueExpression": "pageData.FromDateTime",
+              "title": "form.ShowCasePage.DateTimeFrom",
+              "placeholder": "form.ShowCasePage.DateTimeFromHint",
+              "timeOptions": {
+                "minuteInterval": 15
+              },
+              "readonly": "pageData.Disabled",
+              "caption": "form.ShowCasePage.DateTimeFromCaption"
+            },
+            {
+              "type": "dateTimeEditor",
+              "mode": "datetime",
+              "valueExpression": "pageData.ToDateTime",
+              "title": "form.ShowCasePage.DateTimeTo",
+              "placeholder": "form.ShowCasePage.DateTimeToHint",
+              "readonly": "pageData.Disabled",
+              "timeOptions": {
+                "minuteInterval": 30
+              },
+              "caption": "form.ShowCasePage.DateTimeToCaption"
+            },
+            {
+              "type": "dateTimeEditor",
+              "mode": "date",
+              "valueExpression": "pageData.Date",
+              "title": "form.ShowCasePage.Date",
+              "placeholder": "form.ShowCasePage.DateHint",
+              "readonly": "pageData.Disabled",
+              "validator": [
+                {
+                  "type": "expression",
+                  "errorMessage": "form.ShowCasePage.DateIsRequired",
+                  "expression": "pageData.Date"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint"
+            },
+            {
+              "type": "dateTimeEditor",
+              "mode": "time",
+              "valueExpression": "pageData.Time",
+              "title": "form.ShowCasePage.Time",
+              "placeholder": "form.ShowCasePage.TimeHint",
+              "readonly": "pageData.Disabled",
+              "validator": [
+                {
+                  "type": "expression",
+                  "errorMessage": "form.ShowCasePage.DateIsRequired",
+                  "expression": "pageData.Time"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint",
+              "timeOptions": {
+                "minuteInterval": 30
+              }
+            }
+          ]
+        },
+        {
+          "title": "form.ShowCasePage.SwitchSection",
+          "type": "section",
+          "readonly": "pageData.Disabled",
+          "items": [
+            {
+              "type": "toggleEditor",
+              "mode": "switch",
+              "items": [
+                {
+                  "valueExpression": "pageData.Switch1",
+                  "text": "form.ShowCasePage.Switch"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint",
+              "readonly": "pageData.Disabled"
+            },
+            {
+              "type": "toggleEditor",
+              "mode": "radio",
+              "title": "form.ShowCasePage.Radio",
+              "readonly": "pageData.Disabled",
+              "items": [
+                {
+                  "valueExpression": "pageData.Radio1",
+                  "onValue": 1,
+                  "text": "form.ShowCasePage.Radio1_1"
+                },
+                {
+                  "valueExpression": "pageData.Radio1",
+                  "onValue": 2,
+                  "text": "form.ShowCasePage.Radio1_2"
+                },
+                {
+                  "valueExpression": "pageData.Radio1",
+                  "onValue": 3,
+                  "text": "form.ShowCasePage.Radio1_3"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint"
+            },
+            {
+              "type": "toggleEditor",
+              "mode": "checkbox",
+              "title": "form.ShowCasePage.Checkbox",
+              "readonly": "pageData.Disabled",
+              "items": [
+                {
+                  "valueExpression": "pageData.Checkbox11",
+                  "text": "form.ShowCasePage.Checkbox1_1"
+                },
+                {
+                  "valueExpression": "pageData.Checkbox12",
+                  "text": "form.ShowCasePage.Checkbox1_2"
+                },
+                {
+                  "valueExpression": "pageData.Checkbox13",
+                  "text": "form.ShowCasePage.Checkbox1_3"
+                }
+              ],
+              "validator": [
+                {
+                  "type": "expression",
+                  "errorMessage": "form.ShowCasePage.CheckboxValidationHint",
+                  "expression": "pageData.Checkbox13 == true || pageData.Checkbox12  == true || pageData.Checkbox11  == true"
+                }
+              ],
+              "caption": "form.ShowCasePage.EditorHint"
+            }
+          ]
+        },
+        {
+          "title": "form.ShowCasePage.FilesSection",
+          "type": "section",
+          "items": [
+            {
+              "type": "attachmentsEditor",
+              "sourceExpression": "pageData",
+              "title": "form.ShowCasePage.Attachments",
+              "caption": "form.ShowCasePage.AttachmentsHint",
+              "readonly": "pageData.Disabled"
+            },
+            {
+              "type": "signatureEditor",
+              "sourceExpression": "pageData",
+              "title": "form.ShowCasePage.Signature",
+              "caption": "form.ShowCasePage.SignatureHint",
+              "readonly": "pageData.Disabled",
+              "enableFullName": true
+            }
+          ]
+        },
+        {
+          "title": "form.ShowCasePage.ButtonGroupSection",
+          "type": "section",
+          "items": [
+            {
+              "type": "buttonGroup",
+              "items": [
+                {
+                  "text": "form.ShowCasePage.ButtonGroupOneBtn",
+                  "theme": "primary",
+                  "disabled": "pageData.Disabled",
+                  "behavior": {
+                    "type": "custom",
+                    "functionExpression": ""
+                  }
+                }
+              ]
+            },
+            {
+              "type": "buttonGroup",
+              "items": [
+                {
+                  "disabled": "pageData.Disabled",
+                  "text": "form.ShowCasePage.ButtonGroupTwoBtnLeft",
+                  "theme": "default",
+                  "behavior": {
+                    "type": "custom",
+                    "functionExpression": ""
+                  }
+                },
+                {
+                  "disabled": "pageData.Disabled",
+                  "text": "form.ShowCasePage.ButtonGroupTwoBtnRight",
+                  "theme": "default",
+                  "behavior": {
+                    "type": "custom",
+                    "functionExpression": ""
+                  }
+                }
+              ]
+            },
+            {
+              "type": "buttonGroup",
+              "disabled": "pageData.Disabled",
+              "items": [
+                {
+                  "disabled": "pageData.Disabled",
+                  "text": "form.ShowCasePage.ButtonGroupThreeBtn1",
+                  "theme": "default",
+                  "behavior": {
+                    "type": "custom",
+                    "functionExpression": ""
+                  }
+                },
+                {
+                  "disabled": "pageData.Disabled",
+                  "text": "form.ShowCasePage.ButtonGroupThreeBtn2",
+                  "theme": "default",
+                  "behavior": {
+                    "type": "custom",
+                    "functionExpression": ""
+                  }
+                },
+                {
+                  "disabled": "pageData.Disabled",
+                  "text": "form.ShowCasePage.ButtonGroupThreeBtn3",
+                  "theme": "success",
+                  "behavior": {
+                    "type": "custom",
+                    "functionExpression": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "form.ShowCasePage.TextViewSection",
+          "type": "section",
+          "items": [
+            {
+              "type": "textView",
+              "title": "form.ShowCasePage.TextViewTitle",
+              "text": "form.ShowCasePage.TextViewText"
+            },
+            {
+              "type": "readonlyTextView",
+              "title": "form.ShowCasePage.ReadonlyTextViewTitle",
+              "text": "form.ShowCasePage.ReadonlyTextViewText",
+              "caption": "form.ShowCasePage.ReadonlyTextViewHint"
+            }
+          ]
+        }
+      ]
+    },
+    "ListPage": {
+      "title": "form.ListPage.PageTitle",
+      "type": "list",
+      "sourceExpression": "sharedData.__predefined.Items",
+      "emptyText": "form.ListPage.Empty",
+      "search": {
+        "placeholder": "form.ListPage.SearchPlaceholder",
+        "filterOnProperties": [
+          "Name"
+        ]
+      },
+      "header": {
+        "tags": {
+          "items": [
+            {
+              "text": "ui.default",
+              "themeValueExpression": "default"
+            },
+            {
+              "text": "ui.success",
+              "themeValueExpression": "success"
+            },
+            {
+              "text": "ui.primary",
+              "themeValueExpression": "primary"
+            },
+            {
+              "text": "ui.warning",
+              "themeValueExpression": "warning"
+            },
+            {
+              "text": "ui.focus",
+              "themeValueExpression": "focus"
+            },
+            {
+              "text": "ui.danger",
+              "themeValueExpression": "danger"
+            },
+            {
+              "text": "ui.default_alt",
+              "themeValueExpression": "default_alt"
+            },
+            {
+              "text": "ui.success_alt",
+              "themeValueExpression": "success_alt"
+            },
+            {
+              "text": "ui.primary_alt",
+              "themeValueExpression": "primary_alt"
+            },
+            {
+              "text": "ui.warning_alt",
+              "themeValueExpression": "warning_alt"
+            },
+            {
+              "text": "ui.focus_alt",
+              "themeValueExpression": "focus_alt"
+            },
+            {
+              "text": "ui.danger_alt",
+              "themeValueExpression": "danger_alt"
+            }
+          ]
+        }
+      },
+      "itemLayout": {
+        "type": "titleAndCaption",
+        "title": "form.ListPage.ItemTitle",
+        "caption": "form.ListPage.ItemCaption",
+        "tags": {
+          "items": [
+            {
+              "text": "ui.default",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 1",
+                "value": "default"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.success",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 2",
+                "value": "success"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.primary",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 3",
+                "value": "primary"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.warning",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 4",
+                "value": "warning"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.focus",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 5",
+                "value": "focus"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.danger",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 6",
+                "value": "danger"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.default_alt",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 1",
+                "value": "default_alt"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.success_alt",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 2",
+                "value": "success_alt"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.primary_alt",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 3",
+                "value": "primary_alt"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.warning_alt",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 4",
+                "value": "warning_alt"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.focus_alt",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 5",
+                "value": "focus_alt"
+              }, {
+                "value": "none"
+              }]
+            },
+            {
+              "text": "ui.danger_alt",
+              "themeValueExpression": [{
+                "condition": "item.Qty === 6",
+                "value": "danger_alt"
+              }, {
+                "value": "none"
+              }]
+            }
+          ]
+        }
+      },
+      "headerTitle": "form.ListPage.headerTitle",
+      "headerDescription": "form.ListPage.headerDescription",
+      "buttonGroup": {
+        "items": [
+          {
+            "text": "form.ListPage.ButtonGroup1",
+            "theme": "primary",
+            "behavior": {
+              "type": "custom",
+              "functionExpression": ""
+            }
+          },
+          {
+            "text": "form.ListPage.ButtonGroup2",
+            "theme": "default",
+            "behavior": {
+              "type": "custom",
+              "functionExpression": ""
+            }
+          }
+        ]
+      }
+    }
+  }
+}
