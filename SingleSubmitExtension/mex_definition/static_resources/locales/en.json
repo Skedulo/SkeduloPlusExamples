@@ -1,0 +1,13 @@
+{
+  "AddProductPage": {
+    "Title": "Add new product",
+    "Name": "Name",
+    "NameHint": "Enter product name",
+    "NameIsRequired": "Product name is required",
+    "Description": "Description",
+    "DescriptionHint": "Enter product description",
+    "ProductCode": "Product code",
+    "ProductCodeHint": "Enter product code",
+    "IsActive": "Is this product active?"
+  }
+}

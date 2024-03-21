@@ -1,0 +1,9 @@
+{
+  "name": "Read-Only Extension: Product Listing",
+  "defId": "Read_Only_Extension_Product_Listing",
+  "engineVersion": "1.0.0",
+  "customFunctionFeatures": {
+    "fetchFunction": false,
+    "saveFunction": false
+  }
+}

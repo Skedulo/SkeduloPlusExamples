@@ -1,0 +1,80 @@
+{
+  "firstPage": "ProductListPage",
+  "readonly": true,
+  "pages": {
+    "ProductListPage": {
+      "title": "ProductListPage.Title",
+      "type": "list",
+      "sourceExpression": "formData.Products",
+      "emptyText": "ProductListPage.Empty",
+      "itemLayout": {
+        "type": "titleAndCaption",
+        "title": "ProductListPage.ItemTitle",
+        "caption": "ProductListPage.ItemCaption",
+        "tags": {
+          "type": "fixed",
+          "items": [
+            {
+              "text": "ProductListPage.TagValue",
+              "themeValueExpression": [
+                {
+                  "condition": "item.IsActive == true",
+                  "value": "primary"
+                },
+                {
+                  "value": "none"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "header": {
+        "title": "ProductListPage.HeaderTitle",
+        "description": "ProductListPage.HeaderDescription"
+      },
+      "itemClickDestination": "ProductDetailPage"
+    },
+    "ProductDetailPage": {
+      "title": "ProductDetailPage.Title",
+      "type": "flat",
+      "header": {
+        "title": "ProductDetailPage.HeaderTitle",
+        "tags": {
+          "type": "fixed",
+          "items": [
+            {
+              "text": "ProductDetailPage.TagValue",
+              "themeValueExpression": [
+                {
+                  "condition": "pageData.IsActive == true",
+                  "value": "primary"
+                },
+                {
+                  "value": "none"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "items": [
+        {
+          "type": "textView",
+          "title": "ProductDetailPage.DescriptionTitle",
+          "text": "ProductDetailPage.DescriptionText"
+        },
+        {
+          "type": "textView",
+          "title": "ProductDetailPage.ProductCodeTitle",
+          "text": "ProductDetailPage.ProductCodeText"
+        },
+        {
+          "type": "textView",
+          "title": "ProductDetailPage.CreatedDateTitle",
+          "text": "ProductDetailPage.CreatedDateText"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Editable Extension: Manage Job Products",
+  "defId": "Editable_Extension_Manage_Job_Products",
+  "engineVersion": "1.0.0",
+  "customFunctionFeatures": {
+    "fetchFunction": false,
+    "saveFunction": false
+  }
+}
