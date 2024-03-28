@@ -18,7 +18,7 @@ This form doesn't require any customisation within Skedulo, and should be used a
 
 ### Add Products
 
-A practical example, allows the user to add Product records for use in the Job Products extension below. 
+A practical example, allows the user to view, edit and create Product records for use in the Job Products extension below. 
 
 #### Example
 
@@ -27,19 +27,51 @@ A practical example, allows the user to add Product records for use in the Job P
 
 ### Job Products
 
-A practical example, allowing the user to create and update Job Product records, and attach images.
+A practical example, allowing the user to view, edit and create Job Product records, and attach images.
 
-Requires Product records to be created using the "Add Products" extension detailed above.
+Requires Product records to be created using the "Add Products" or "Single Submission" extension detailed above.
 
-#### Example
+#### Example Screenshots
 
 <img src="/images/hello-world.jpg" width="200">
 
-### Kitchen Sink
+### UI Component Showcase
 
 An example containing all available components, intented only as a showcase.
 
-#### Example
+#### Example Screenshots
+
+TBC
+
+### Editable Extension
+
+TBC
+
+#### Example Screenshots
+
+TBC
+
+### Read Only Extension
+
+A simple extension to display a read-only list of Product records. 
+
+#### Example Screenshots
+
+TBC
+
+### Editable Extension
+
+TBC
+
+#### Example Screenshots
+
+TBC
+
+### Single Submission Extension
+
+A simple extension to create Product records, does not allow for editing or listing.
+
+#### Example Screenshots
 
 TBC
 
@@ -53,27 +85,30 @@ In order to deploy them, you will need to log in to a tentant, this can be done 
 
 You will be prompted for your tenant name, and be asked if you wish to generate a long lived token.
 
-### Deployment
+### Deployment (create)
 
 Run the following command to deploy the `HelloWorld` example to your tenant for the first time. Replace with value in `-f` with the appropriate folder if you wish to deploy a different extension.
 
 `sked artifacts mobile-extension create -f ./HelloWorld`
 
-### Retrival
+### Retrival (get)
 
 Run the following command to retireve the `HelloWorld` example from your tenant. Replace with value in `-o` with the folder you wish to store the extension in. Change the value of `--defId` to retrieve a different extension.
 
 `sked artifacts mobile-extension get -o ./HelloWorld --defId HelloWorld`
 
-### Modifications
+### Modifications (update)
 
 Run the following command to update the `HelloWorld` mobile extension after you've made changes locally. Replace with value in `-f` and `--defId` with the appropriate folder and Definition ID if you wish to deploy a different extension.
 
 `sked artifacts mobile-extension update --defId HelloWorld -f ./HelloWorld`
 
-### Deletion
+### Deletion (delete)
 
 Run the following command to delete the `HelloWorld`. Replace with value in `--defId` with the appropriate Definition Id if you wish to delete a different extension.
 
 `sked artifacts mobile-extension delete --defId HelloWorld`
 
+### Getting Help
+
+TBC
