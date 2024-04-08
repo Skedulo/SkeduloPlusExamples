@@ -89,19 +89,19 @@ You will be prompted for your tenant name, and be asked if you wish to generate 
 
 Run the following command to deploy the `HelloWorld` example to your tenant for the first time. Replace with value in `-f` with the appropriate folder if you wish to deploy a different extension.
 
-`sked artifacts mobile-extension create -f ./HelloWorld`
+`sked artifacts mobile-extension create -f HelloWorld.MobileExtension.json`
 
 ### Retrival (get)
 
 Run the following command to retireve the `HelloWorld` example from your tenant. Replace with value in `-o` with the folder you wish to store the extension in. Change the value of `--defId` to retrieve a different extension.
 
-`sked artifacts mobile-extension get -o ./HelloWorld --defId HelloWorld`
+`sked artifacts mobile-extension get -o . --defId HelloWorld`
 
 ### Modifications (update)
 
 Run the following command to update the `HelloWorld` mobile extension after you've made changes locally. Replace with value in `-f` and `--defId` with the appropriate folder and Definition ID if you wish to deploy a different extension.
 
-`sked artifacts mobile-extension update --defId HelloWorld -f ./HelloWorld`
+`sked artifacts mobile-extension update --defId HelloWorld -f HelloWorld.MobileExtension.json`
 
 ### Deletion (delete)
 
