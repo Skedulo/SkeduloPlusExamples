@@ -1,0 +1,9 @@
+{
+  "name": "Create contact with steps",
+  "defId": "create_contact_steps",
+  "engineVersion": "1.10.26",
+  "customFunctionFeatures": {
+    "fetchFunction": false,
+    "saveFunction": false
+  }
+}
