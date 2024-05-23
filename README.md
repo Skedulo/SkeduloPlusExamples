@@ -1,6 +1,8 @@
 # Skedulo Plus Examples
 
-A set of example Skedulo Plus Mobile Extensions, to be deployed with the [Skedulo CLI](#Usage).
+A set of example Skedulo Plus Mobile Extensions, to be deployed with the [Skedulo CLI](#Usage). 
+
+These are currenrly for early access customers only.
 
 ## Extensions
 
@@ -12,18 +14,9 @@ A simple example with the bare minimum, displays some example text.
 
 This form doesn't require any customisation within Skedulo, and should be used as a base for creating new mobile extensions.
 
-#### Example
-
-<img src="/images/hello-world.jpg" width="200">
-
 ### Add Products
 
 A practical example, allows the user to view, edit and create Product records for use in the Job Products extension below. 
-
-#### Example
-
-<img src="/images/hello-world.jpg" width="200">
-
 
 ### Job Products
 
@@ -31,49 +24,25 @@ A practical example, allowing the user to view, edit and create Job Product reco
 
 Requires Product records to be created using the "Add Products" or "Single Submission" extension detailed above.
 
-#### Example Screenshots
+### Conditional Rendering
 
-<img src="/images/hello-world.jpg" width="200">
+A version of the "Add Products" Extension with conditional rendering and depenant picklists. 
+
+Requires the following fields to be created: `ProductType, ProductSubType, `
 
 ### UI Component Showcase
 
 An example containing all available components, intented only as a showcase.
 
-#### Example Screenshots
-
-TBC
-
-### Editable Extension
-
-TBC
-
-#### Example Screenshots
-
-TBC
 
 ### Read Only Extension
 
 A simple extension to display a read-only list of Product records. 
 
-#### Example Screenshots
-
-TBC
-
-### Editable Extension
-
-TBC
-
-#### Example Screenshots
-
-TBC
-
 ### Single Submission Extension
 
 A simple extension to create Product records, does not allow for editing or listing.
 
-#### Example Screenshots
-
-TBC
 
 ## Usage
 
@@ -111,4 +80,5 @@ Run the following command to delete the `HelloWorld`. Replace with value in `--d
 
 ### Getting Help
 
-TBC
+Please see the [Mobile Extension documation](https://mex-beta.docs.skedulo.com/developer-guides/customize-and-extend-mobile/skedulo-plus-extensions/mex-intro/), and if you still expirence issues please contact your Customer Success Manager.
+
