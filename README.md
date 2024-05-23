@@ -28,7 +28,16 @@ Requires Product records to be created using the "Add Products" or "Single Submi
 
 A version of the "Add Products" Extension with conditional rendering and depenant picklists. 
 
-Requires the following fields to be created: `ProductType, ProductSubType, `
+Requires the following fields to be created:
+
+| Field Name | Type | Values |
+|------------|-----|---------|
+| ProductType | Picklist | Audio, Video, Lighting, Hardware |
+| ProductSubType | Picklist | Ring Light, Panel Light, Green Screen, Lectern, Digital Still Camera, Digital Video Camera, Speaker, Headphones, Microphone |
+| CameraType | Picklist | Mirrorless, DSLR |
+| CameraLensSystem | Text | |
+| Wattage | Integer | |
+| LightingPowerConnector | Picklist | IEC-C13, IEC-C7, USB-C, MicroUSB, Barrel |
 
 ### UI Component Showcase
 
