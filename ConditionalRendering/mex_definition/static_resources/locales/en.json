@@ -1,0 +1,58 @@
+{
+  "form": {
+    "ProductListPages": {
+      "ProductTitle": "Products",
+      "ItemTitle": "${item.Name} (${item.ProductCode})" ,
+      "ItemCaption": "${item.Description}\nDate added: ${dateFormat(item.CreatedDate)}",
+      "Empty": "You don't have any Products related to this job yet.",
+      "Add": "Add product",
+      "SearchPlaceholder": "Search for Products"
+    },
+    "UpsertProductPage": {
+      "AddProduct": "Add Product",
+      "EditProduct": "Edit Product",
+      "Add": "Add",
+      "Update": "Save",
+      "DeleteProduct": "Remove Product",
+      "ConfirmDeleteTitle": "Remove product",
+      "ConfirmDeleteDescription": "Are you sure that you wish to remove this product? This can not be undone",
+      "ConfirmDeleteYesButton": "Yes",
+      "ConfirmDeleteNoButton": "No",
+      "StandardInformation": "Standard Information",
+      "Name": "Name",
+      "NameHint": "Enter the product name",
+      "NameMustBeEntered": "You must enter a product name",
+      "Description": "Description",
+      "DescriptionHint": "Enter a description of this product",
+      "DescriptionMustBeEntered": "You must enter a product description",
+      "ProductCode": "Product Serial Number",
+      "ProductCodeHint": "Use your device's camera to scan the product code",
+      "ProductCodeMustBeEntered": "You must enter or scan a product code",
+      "ProductInformation": "General Product Information",
+      "ProductType": "Product Type",
+      "ProductTypeHint": "Select a product type",
+      "ProductTypeHintMustBeEntered": "You must select a product type",
+      "ItemTitle": "${item.Label}",
+      "ItemEmpty": "Nothing Found",
+      "ProductSubType": "Product Sub Type",
+      "ProductSubTypeHint": "Select a product sub type",
+      "ProductSubTypeHintMustBeEntered": "You must select a product sub type",
+      "CameraInformation": " ",
+      "CameraType": "Camera Type",
+      "CameraTypeHint": "Select a camera type",
+      "CameraLensSystem": "Camera Lens System",
+      "CameraLensSystemHint": "Enter a the lens system used by this camera",
+      "SpeakerInformation": "Speaker Information",
+      "SpeakerWattage": "Speaker Wattage",
+      "SpeakerWattagHint": "You must enter a speaker wattage",
+      "AddAttachment": "Add Attachment",
+      "AttachmentRequired": "You must upload an image of the product"
+    },
+    "JobProductSelectPage": {
+      "Title": "Select a Product",
+      "ItemTitle": "${item.Name}",
+      "ItemCaption": "${item.Description}",
+      "Empty": "No Products Found"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "GraphQl",
+    "Products": {
+      "object": "Products",
+      "fields": [
+        "UID",
+        "Name",
+        "Description",
+        "CreatedDate",
+        "ProductCode",
+        "ProductType",
+        "ProductSubType",
+        "CameraType",
+        "CameraLensSystem",
+        "Wattage"
+      ]
+    }
+  }

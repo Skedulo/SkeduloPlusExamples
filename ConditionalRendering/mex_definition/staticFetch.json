@@ -1,0 +1,56 @@
+{
+    "type": "GraphQl",
+    "__vocabulary": {
+        "ProductTypes": "Products:ProductType",
+        "CameraTypes": "Products:CameraType"
+    },
+    "__predefined": {
+        "PredefinedPicklist": [
+            {
+                "Label": "Digital Still Camera",
+                "For": "Video",
+                "Value": "DigitalStillCamera"
+            },
+            {
+                "Label": "Digital Video Camera",
+                "For": "Video",
+                "Value": "DigitalVideoCamera"
+                },
+             {
+                "Label": "Speaker",
+                "For": "Audio",
+                "Value": "Speaker"
+            },
+            {
+                "Label": "Headphones",
+                "For": "Audio",
+                "Value": "Headphones"
+            },
+            {
+                "Label": "Microphone",
+                "For": "Audio",
+                "Value": "Microphone"
+            },
+            {
+                "Label": "Ring Light",
+                "For": "Lighting",
+                "Value": "RingLight"
+            },
+            {
+                "Label": "Panel Light",
+                "For": "Lighting",
+                "Value": "PanelLight"
+            },
+            {
+                "Label": "Green Screen",
+                "For": "Hardware",
+                "Value": "GreenScreen"
+            },
+            {
+                "Label": "Lectern",
+                "For": "Hardware",
+                "Value": "Lectern"
+            }
+        ]
+    }
+}
