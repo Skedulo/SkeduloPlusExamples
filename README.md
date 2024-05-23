@@ -34,7 +34,6 @@ Requires the following fields to be created: `ProductType, ProductSubType, `
 
 An example containing all available components, intented only as a showcase.
 
-
 ### Read Only Extension
 
 A simple extension to display a read-only list of Product records. 
