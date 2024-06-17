@@ -1,4 +1,6 @@
 {
-  "title": "UID",
+  "UID": "UID",
+  "Name": "Name",
+  "Title": "AccountDetails",
   "description": "A simple example mobile extension"
 }

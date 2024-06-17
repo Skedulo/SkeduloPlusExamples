@@ -7,15 +7,24 @@
         {
           "type": "textEditor",
           "valueExpression": "pageData.UID",
-          "title": "title",
+          "title": "UID",
           "features": {
-            "useBarcodeAndQRScanner": true
+            "useBarcodeAndQRScanner": false
           },
           "leftSymbol": "form.UpsertJobProductPage.Each"
-      }
+      },
+      {
+        "type": "textEditor",
+        "valueExpression": "pageData.Name",
+        "title": "Name",
+        "features": {
+          "useBarcodeAndQRScanner": false
+        },
+        "leftSymbol": "form.UpsertJobProductPage.Each"
+    }
       ]
     },
-    "title": "Account Details"
+    "title": "Title"
   },
   "firstPage": "AccountDetails"
 }

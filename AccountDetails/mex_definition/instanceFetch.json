@@ -4,7 +4,8 @@
   "Accounts": {
     "object": "Accounts",
     "fields": [
-      "UID"
+      "UID",
+      "Name"
       
     ],
     "filter": "UID == '${var1}'",
