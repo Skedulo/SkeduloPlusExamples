@@ -9,6 +9,8 @@
       
     ],
     "filter": "UID == '${var1}'",
+    "orderBy": "CreatedDate DESC",
+    "limit": 1,
     "variables": {
       "var1": "$it.AccountId"
     }

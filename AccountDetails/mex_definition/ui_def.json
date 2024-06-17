@@ -3,6 +3,8 @@
     "AccountDetails": {
       "type": "flat",
       "pageDataExpression": "formData.Accounts",
+      
+      "title":"Title",
       "items": [
         {
           "type": "textEditor",
@@ -23,8 +25,7 @@
         "leftSymbol": "form.UpsertJobProductPage.Each"
     }
       ]
-    },
-    "title": "Title"
+    }
   },
   "firstPage": "AccountDetails"
 }
