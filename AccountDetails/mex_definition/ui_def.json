@@ -1,13 +1,18 @@
 {
   "pages": {
-    "HelloWorld": {
+    "AccountDetails": {
       "type": "flat",
+      "pageDataExpression": "formData.Accounts",
       "items": [
         {
-          "type": "textView",
+          "type": "textEditor",
+          "valueExpression": "pageData.UID",
           "title": "title",
-          "text": "description"
-        }
+          "features": {
+            "useBarcodeAndQRScanner": true
+          },
+          "leftSymbol": "form.UpsertJobProductPage.Each"
+      }
       ]
     },
     "title": "HelloWorld"

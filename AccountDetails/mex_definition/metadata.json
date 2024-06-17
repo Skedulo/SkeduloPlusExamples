@@ -1,1 +1,10 @@
-{"email":"swheeler@skedulo.com","summary":"An example Skedulo Plus Mobile Extension","references":{},"templateId":"","displayOrder":0,"contextObject":"Resources","revisionCount":1,"hasAttachments":[]}
+{
+  "email": "sgassmann@skedulo.com",
+  "summary": "View account information",
+  "references": {},
+  "templateId": "",
+  "displayOrder": 0,
+  "contextObject": "Jobs",
+  "revisionCount": 1,
+  "hasAttachments": []
+}

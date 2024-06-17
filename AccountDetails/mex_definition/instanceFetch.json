@@ -1,1 +1,15 @@
-{}
+{
+
+  "type": "GraphQl",
+  "Accounts": {
+    "object": "Accounts",
+    "fields": [
+      "UID"
+      
+    ],
+    "filter": "UID == '${var1}'",
+    "variables": {
+      "var1": "$it.AccountId"
+    }
+  }
+}
