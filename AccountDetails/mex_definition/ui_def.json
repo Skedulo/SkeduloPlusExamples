@@ -1,0 +1,16 @@
+{
+  "pages": {
+    "HelloWorld": {
+      "type": "flat",
+      "items": [
+        {
+          "type": "textView",
+          "title": "title",
+          "text": "description"
+        }
+      ]
+    },
+    "title": "HelloWorld"
+  },
+  "firstPage": "HelloWorld"
+}
