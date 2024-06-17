@@ -3,27 +3,68 @@
     "AccountDetails": {
       "type": "flat",
       "pageDataExpression": "formData.Accounts",
-      
-      "title":"Title",
-      "items": [
-        {
-          "type": "textEditor",
-          "valueExpression": "pageData.UID",
-          "title": "UID",
-          "features": {
-            "useBarcodeAndQRScanner": false
-          },
-          "leftSymbol": "form.UpsertJobProductPage.Each"
-      },
-      {
-        "type": "textEditor",
-        "valueExpression": "pageData.Name",
-        "title": "Name",
-        "features": {
-          "useBarcodeAndQRScanner": false
+      "upsert": {
+        
+        "defaultDataForNewObject": {
+          "CreatedDate": "${now()}"
         },
-        "leftSymbol": "form.UpsertJobProductPage.Each"
-    }
+        "validator": [],
+        "saveDraft": {
+          "askWhenBack": true
+        }
+      },
+      "defaultPageData": {
+          "data": {
+             "UID": "${pageData.UID}"
+          },
+          "objectName": "Accounts"
+        },
+      "title":"Page.Title",
+      
+      "items": [
+
+        {
+          "type": "section",
+          "title": "Page.section.title",
+          "items": [
+
+            {
+              "type": "textEditor",
+              "valueExpression": "pageData.UID",
+              "title": "Page.fieldLabels.UID",
+              "readonly":"true"
+          },
+          {
+            "type": "textEditor",
+            "valueExpression": "pageData.Name",
+            "title": "Page.fieldLabels.Name"
+          },
+          {
+            "type": "textEditor",
+            "valueExpression": "pageData.BillingStreet",
+            "title": "Page.fieldLabels.BillingStreet"
+          },
+          {
+            "type": "textEditor",
+            "valueExpression": "pageData.BillingCity",
+            "title": "Page.fieldLabels.BillingCity"
+          }
+          ,
+          {
+            "type": "textEditor",
+            "valueExpression": "pageData.BillingState",
+            "title": "Page.fieldLabels.BillingState"
+          },
+          {
+            "type": "textEditor",
+            "valueExpression": "pageData.BillingPostalCode",
+            "title": "Page.fieldLabels.BillingPostalCode"
+          }
+            
+          ]
+        }
+        
+        
       ]
     }
   },

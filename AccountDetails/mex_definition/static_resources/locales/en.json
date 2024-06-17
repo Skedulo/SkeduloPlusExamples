@@ -1,6 +1,16 @@
 {
-  "UID": "UID",
-  "Name": "Name",
-  "Title": "Account Details",
-  "description": "A simple example mobile extension"
+  "Page": {
+    "Title": "Account Details",
+    "section": {
+      "title":"Account Information"
+    },  
+    "fieldLabels": {
+      "UID": "UID",
+      "Name": "Name",
+      "BillingStreet": "Street",
+      "BillingCity": "City",
+      "BillingState": "State",
+      "BillingPostalCode": "ZIP Code"
+    }
+  }
 }

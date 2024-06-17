@@ -5,7 +5,11 @@
     "object": "Accounts",
     "fields": [
       "UID",
-      "Name"
+      "Name",
+      "BillingStreet",
+      "BillingCity",
+      "BillingState",
+      "BillingPostalCode"
       
     ],
     "filter": "UID == '${var1}'",
