@@ -2,12 +2,14 @@
   "pages": {
     "AccountDetails": {
       "type": "flat",
+      
       "pageDataExpression": "formData.Accounts",
       "upsert": {
         
         "defaultDataForNewObject": {
           "CreatedDate": "${now()}"
         },
+        "readonly": true,
         "validator": [],
         "saveDraft": {
           "askWhenBack": true
@@ -21,6 +23,7 @@
         },
       "title":"Page.Title",
       
+      
       "items": [
 
         {
@@ -28,12 +31,6 @@
           "title": "Page.section.title",
           "items": [
 
-            {
-              "type": "textEditor",
-              "valueExpression": "pageData.UID",
-              "title": "Page.fieldLabels.UID",
-              "readonly":"true"
-          },
           {
             "type": "textEditor",
             "valueExpression": "pageData.Name",
