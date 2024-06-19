@@ -14,6 +14,10 @@ A simple example with the bare minimum, displays some example text.
 
 This form doesn't require any customisation within Skedulo, and should be used as a base for creating new mobile extensions.
 
+## Account Details 
+
+A practical example, allows the user to view the attributes of an account related to a Job. This form can be easily extended to expose custom account fields as well as the `readonly` page flag can be removed to allow users to update the account fields displayed. 
+
 ### Add Products
 
 A practical example, allows the user to view, edit and create Product records for use in the Job Products extension below. 
