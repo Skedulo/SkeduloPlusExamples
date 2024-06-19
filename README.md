@@ -30,7 +30,7 @@ Requires Product records to be created using the "Add Products" or "Single Submi
 
 ### Conditional Rendering
 
-A version of the "Add Products" Extension with conditional rendering and depenant picklists. 
+A version of the "Add Products" Extension with conditional rendering and dependant picklists. 
 
 Requires the following fields to be created:
 
