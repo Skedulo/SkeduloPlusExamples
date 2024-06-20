@@ -1,0 +1,22 @@
+{
+
+  "type": "GraphQl",
+  "Accounts": {
+    "object": "Accounts",
+    "fields": [
+      "UID",
+      "Name",
+      "BillingStreet",
+      "BillingCity",
+      "BillingState",
+      "BillingPostalCode"
+      
+    ],
+    "filter": "UID == '${var1}'",
+    "orderBy": "CreatedDate DESC",
+    "limit": 1,
+    "variables": {
+      "var1": "$it.AccountId"
+    }
+  }
+}
