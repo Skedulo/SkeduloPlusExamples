@@ -1,11 +1,8 @@
 {
-    "summary": "Allows you to view Contacts for a given account",
-    "email": "",
+    "summary": "Manage related contact information",
     "revisionCount": 1,
     "contextObject": "Jobs",
-    "bundleId": "",
     "displayOrder": 0,
-    "templateId": "",
     "hasAttachments": ["Contacts"],
     "references": {
       "Contacts": ["Account"]
