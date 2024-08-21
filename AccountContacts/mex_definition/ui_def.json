@@ -9,7 +9,7 @@
         "destinationPage": "UpsertContactPage",
         "defaultData": {
           "data": {
-            "AccountId": "${metadata.Job.AccountId}"
+            "AccountId": "${metadata.job.accountId}"
           },
           "objectName": "Contacts"
         }
