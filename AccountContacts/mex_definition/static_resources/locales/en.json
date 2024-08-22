@@ -1,0 +1,45 @@
+{
+  "form": {
+    "ContactsListPage": {
+      "Title": "Contacts",
+      "Add": "Add contact",
+      "ItemTitle": "${item.FullName}",
+      "Empty": "There are no contacts currently associated with this Account.",
+      "SearchPlaceholder": "Search for Contacts",      
+      "ItemCaption": "Title: ${item.Title}\nPhone: ${item.Phone}"
+    },
+    "UpsertContactPage": {
+      "EditContact": "Edit Contact",
+      "ConfirmDeleteYesButton": "Yes",
+      "Update": "Save",
+      "ConfirmDeleteNoButton": "No",
+      "DeleteContact": "Delete contact",
+      "ConfirmDeleteTitle": "Delete contact",
+      "AddContact": "Add Contact",
+      "Add": "Add",
+      "ConfirmDeleteDescription": "Are you sure that you wish to delete this Contact? This can not be undone",
+      "FirstName":"First Name",
+      "FirstNameTextHint":"Enter the first name of the contact",
+      "FirstNameEditorHint": "The first name of the contact",
+      "LastName":"Last Name",
+      "LastNameTextHint":"Enter the last name of the contact",
+      "LastNameEditorHint": "The last name of the contact",
+
+      "Title":"Title",
+      "TitleTextHint":"The contacts role within the organization",
+      "TitleEditorHint": "Enter the contact's role within the organization",
+
+      "Phone":"Phone",
+      "PhoneTextHint":"Enter the primary phone number of the contact",
+      "PhoneEditorHint": "The primary phone number of the contact",
+
+      "MobilePhone":"Mobile",
+      "MobilePhoneTextHint":"Enter the secondary phone number of the contact",
+      "MobilePhoneEditorHint": "The secondary phone number of the contact",
+
+      "Email":"Email",
+      "EmailTextHint":"Enter the email address of the contact",
+      "EmailEditorHint": "The email address of the contact"
+    }
+  }
+}

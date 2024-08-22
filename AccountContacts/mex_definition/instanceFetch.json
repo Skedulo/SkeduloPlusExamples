@@ -1,0 +1,21 @@
+{
+  "type": "GraphQl",
+  "Contacts": {
+    "object": "Contacts",
+    "fields": [
+      "UID",
+      "AccountId",
+      "FirstName",
+      "LastName",
+      "FullName",
+      "Email",
+      "Title",
+      "Phone",
+      "MobilePhone"
+    ],
+    "filter": "AccountId == '${accUID}'",
+    "variables": {
+      "accUID": "$it.AccountId"
+    }
+  }
+}

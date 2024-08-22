@@ -1,0 +1,102 @@
+{
+  "firstPage": "ContactsListPage",
+  "pages": {
+    "ContactsListPage": {
+      "title": "form.ContactsListPage.Title",
+      "type": "list",
+      "addNew": {
+        "text": "form.ContactsListPage.Add",
+        "destinationPage": "UpsertContactPage",
+        "defaultData": {
+          "data": {
+            "AccountId": "${metadata.job.accountId}"
+          },
+          "objectName": "Contacts"
+        }
+      },
+      "sourceExpression": "formData.Contacts",
+      "emptyText": "form.ContactsListPage.Empty",
+      "search": {
+        "placeholder": "form.ContactsListPage.SearchPlaceholder",
+        "filterOnProperties": ["Contact.FullName"]
+      },
+      "itemLayout": {
+        "type": "titleAndCaption",
+        "title": "form.ContactsListPage.ItemTitle",
+        "caption": "form.ContactsListPage.ItemCaption"
+      },
+      "itemClickDestination": "UpsertContactPage"
+    },
+    "UpsertContactPage": {
+      "type": "flat",
+      "upsert": {
+        "insertTitle": "form.UpsertContactPage.AddContact",
+        "updateTitle": "form.UpsertContactPage.EditContact",
+        "insertButtonText": "form.UpsertContactPage.Add",
+        "updateButtonText": "form.UpsertContactPage.Update",
+        "defaultDataForNewObject": {},
+        "validator": [],
+        "saveDraft": {
+          "askWhenBack": true
+        }
+      },
+      "delete": {
+        "canDeleteExpression": "converters.data.isTempUID(pageData) == false",
+        "text": "form.UpsertContactPage.DeleteContact",
+        "confirm": {
+          "title": "form.UpsertContactPage.ConfirmDeleteTitle",
+          "description": "form.UpsertContactPage.ConfirmDeleteDescription",
+          "yesBtn": "form.UpsertContactPage.ConfirmDeleteYesButton",
+          "noBtn": "form.UpsertContactPage.ConfirmDeleteNoButton"
+        }
+      },
+      "saveDraft": {
+        "askWhenBack": true
+      },
+      "items": [
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.FirstName",
+          "title": "form.UpsertContactPage.FirstName",
+          "placeholder": "form.UpsertContactPage.FirstNameTextHint",
+          "caption": "form.UpsertContactPage.FirstNameEditorHint"
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.LastName",
+          "title": "form.UpsertContactPage.LastName",
+          "placeholder": "form.UpsertContactPage.LastNameTextHint",
+          "caption": "form.UpsertContactPage.LastNameEditorHint"
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Title",
+          "title": "form.UpsertContactPage.Title",
+          "placeholder": "form.UpsertContactPage.TitleTextHint",
+          "caption": "form.UpsertContactPage.TitleEditorHint"
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Phone",
+          "title": "form.UpsertContactPage.Phone",
+          "placeholder": "form.UpsertContactPage.PhoneTextHint",
+          "caption": "form.UpsertContactPage.PhoneEditorHint"
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.MobilePhone",
+          "title": "form.UpsertContactPage.MobilePhone",
+          "placeholder": "form.UpsertContactPage.MobilePhoneTextHint",
+          "caption": "form.UpsertContactPage.MobilePhoneEditorHint"
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Email",
+          "title": "form.UpsertContactPage.Email",
+          "placeholder": "form.UpsertContactPage.EmailTextHint",
+          "caption": "form.UpsertContactPage.EmailEditorHint"
+        }
+      ]
+    }
+  }
+}

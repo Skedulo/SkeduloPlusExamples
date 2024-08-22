@@ -1,0 +1,9 @@
+{
+    "summary": "Manage related contact information",
+    "revisionCount": 1,
+    "contextObject": "Jobs",
+    "displayOrder": 0,
+    "references": {
+      "Contacts": ["Account"]
+    }
+  }

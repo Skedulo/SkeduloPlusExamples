@@ -28,6 +28,10 @@ A practical example, allowing the user to view, edit and create Job Product reco
 
 Requires Product records to be created using the "Add Products" or "Single Submission" extension detailed above.
 
+### Account Contacts
+
+A practical example, allowing a user to view, edit and create Contacts related to an Account for a given job. 
+
 ### Conditional Rendering
 
 A version of the "Add Products" Extension with conditional rendering and dependant picklists. 
