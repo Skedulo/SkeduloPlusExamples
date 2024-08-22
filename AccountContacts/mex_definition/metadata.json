@@ -3,7 +3,6 @@
     "revisionCount": 1,
     "contextObject": "Jobs",
     "displayOrder": 0,
-    "hasAttachments": ["Contacts"],
     "references": {
       "Contacts": ["Account"]
     }
