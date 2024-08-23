@@ -3,9 +3,9 @@
     "ContactsListPage": {
       "Title": "Contacts",
       "Add": "Add contact",
-      "ItemTitle": "${item.FullName}",
       "Empty": "There are no contacts currently associated with this Account.",
-      "SearchPlaceholder": "Search for Contacts",      
+      "SearchPlaceholder": "Search for Contacts",     
+      "ItemTitle": "${item.FullName}", 
       "ItemCaption": "Title: ${item.Title}\nPhone: ${item.Phone}"
     },
     "UpsertContactPage": {
