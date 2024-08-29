@@ -1,1 +1,5 @@
-{"metadata":{"type":"MobileExtension"},"defId":"HelloWorld","source":"./HelloWorld"}
+{
+  "metadata": { "type": "MobileExtension" },
+  "defId": "HelloWorld",
+  "source": "./HelloWorld"
+}
