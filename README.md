@@ -59,6 +59,10 @@ A simple extension to display a read-only list of Product records.
 
 A simple extension to create Product records, does not allow for editing or listing.
 
+### Single Job Product Extension
+
+A simple extension to create a single Job Product per job, allows the record to be edited.
+
 
 ## Usage
 
