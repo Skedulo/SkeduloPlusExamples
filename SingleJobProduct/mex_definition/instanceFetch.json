@@ -1,0 +1,24 @@
+{
+    "type": "GraphQl",
+    "JobProducts": {
+      "object": "JobProducts",
+      "limit": 1,
+      "fields": [
+        "UID",
+        "ProductId",
+        "ProductName",
+        "Name",
+        "Qty",
+        "CreatedDate",
+        "JobId",
+        "Product.UID",
+        "Product.Description",
+        "Product.Name"
+      ],
+      "filter": "JobId == '${jobId}'",
+      "variables": {
+        "jobId": "$it.UID",
+        "userId": "$res.UserId"
+      }
+    }
+  }

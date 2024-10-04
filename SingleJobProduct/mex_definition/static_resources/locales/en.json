@@ -1,0 +1,42 @@
+{
+  "form": {
+    "UpsertJobProductPage": {
+      "AddAttachment": "Add Attachment",
+      "AttachmentRequired": "You must upload an image of the product",
+      "Quantity": "Quantity",
+      "QuantityHint": "Enter quantity",
+      "AddProduct": "Add Product",
+      "EditProduct": "Edit Product",
+      "Product": "Product",
+      "QuantityMustBeAbove0": "Quantity must be between 1 and 1000",
+      "SelectProduct": "Product",
+      "SearchProduct": "Search for Products",
+      "SelectProductHint": "Search",
+      "SelectProductDescription": "${pageData.Product.Description}",
+      "DescriptionTitle": "Description",
+      "Add": "Add",
+      "Update": "Save",
+      "JobProductIsRequired": "Job Product is required",
+      "DeleteJobProduct": "Delete Job Product",
+      "ConfirmDeleteTitle": "Remove product",
+      "ConfirmDeleteDescription": "Are you sure that you wish to remove this Product, this can not be undone",
+      "ConfirmDeleteYesButton": "Yes",
+      "ConfirmDeleteNoButton": "No",
+      "CreatedDate": "Created Date",
+      "NotesHint": "Enter any notes related to this product",
+      "Notes": "Notes",
+      "SerialNumber": "Product Serial Number",
+      "SerialNumberHint": "Use your device's camera to scan the serial number",
+      "SerialNumberMustBeEntered": "You must enter or scan a serial number",
+      "Name": "Name",
+      "NameHint": "Enter a name for this product",
+      "NameRequired": "You must enter a name for this product"
+    },
+    "JobProductSelectPage": {
+      "Title": "Select a Product",
+      "ItemTitle": "${item.Name}",
+      "ItemCaption": "${item.Description}",
+      "Empty": "No Products Found"
+    }
+  }
+}
