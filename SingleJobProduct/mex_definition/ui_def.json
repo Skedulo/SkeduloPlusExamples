@@ -4,19 +4,6 @@
       "type": "flat",
       "items": [
         {
-          "type": "textEditor",
-          "title": "form.UpsertJobProductPage.Name",
-          "validator": [
-            {
-              "type": "expression",
-              "expression": "pageData.Name",
-              "errorMessage": "form.UpsertJobProductPage.NameRequired"
-            }
-          ],
-          "placeholder": "form.UpsertJobProductPage.NameHint",
-          "valueExpression": "pageData.Name"
-        },
-        {
           "type": "selectEditor",
           "title": "form.UpsertJobProductPage.Product",
           "validator": [
@@ -66,7 +53,10 @@
         "validator": []
       },
       "defaultPageData": {
-        "data": {},
+        "data": {
+          "Name": "TempName",
+          "JobId": "${metadata.contextObjectId}"
+        },
         "objectName": "JobProducts"
       },
       "wipeExistingData": false,

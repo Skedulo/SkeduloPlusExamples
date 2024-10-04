@@ -5,13 +5,14 @@
     "fields": [
       "UID",
       "ProductId",
+      "Product.Name",
       "Name",
       "Qty",
       "CreatedDate",
       "JobId",
       "CreatedById"
     ],
-    "filter": "CreatedById == '${resourceId}' AND JobId == '${jobId}'",
+    "filter": "JobId == '${jobId}'",
     "object": "JobProducts",
     "orderBy": "CreatedDate DESC",
     "variables": {
