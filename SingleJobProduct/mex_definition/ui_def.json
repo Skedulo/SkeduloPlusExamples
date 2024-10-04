@@ -1,88 +1,77 @@
 {
-  "firstPage": "UpsertJobProductPage",
   "pages": {
     "UpsertJobProductPage": {
-      "title": "RiskAssessmentPage.InfoHeader",
       "type": "flat",
-      "wipeExistingData": false,
-      "pageDataExpression": "formData.RiskAssessment",
-      "defaultPageData": {
-        "data": {},
-        "objectName": "RiskAssessment"
-      },
-      "upsert": {
-        "validator": [],
-        "saveDraft": {
-          "askWhenBack": true
-        }
-      },
       "items": [
         {
           "type": "textEditor",
-          "valueExpression": "pageData.Name",
           "title": "form.UpsertJobProductPage.Name",
-          "placeholder": "form.UpsertJobProductPage.NameHint",
           "validator": [
             {
               "type": "expression",
-              "errorMessage": "form.UpsertJobProductPage.NameRequired",
-              "expression": "pageData.Name"
+              "expression": "pageData.Name",
+              "errorMessage": "form.UpsertJobProductPage.NameRequired"
             }
-          ]
+          ],
+          "placeholder": "form.UpsertJobProductPage.NameHint",
+          "valueExpression": "pageData.Name"
         },
         {
           "type": "selectEditor",
           "title": "form.UpsertJobProductPage.Product",
-          "structureExpression": "pageData.Product",
-          "valueExpression": "pageData.ProductId",
-          "sourceExpression": "sharedData.Products",
-          "displayExpression": "pageData.Product.Name",
-          "placeholder": "form.UpsertJobProductPage.SelectProductHint",
-          "selectPage": {
-            "itemTitle": "form.JobProductSelectPage.ItemTitle",
-            "emptyText": "form.JobProductSelectPage.Empty",
-            "title": "form.JobProductSelectPage.Title",
-            "searchBar": {
-              "filterOnProperties": ["Name", "Description"]
-            }
-          },
           "validator": [
             {
               "type": "expression",
               "expression": "pageData.ProductId",
               "errorMessage": "form.UpsertJobProductPage.JobProductIsRequired"
             }
-          ]
+          ],
+          "selectPage": {
+            "title": "form.JobProductSelectPage.Title",
+            "emptyText": "form.JobProductSelectPage.Empty",
+            "itemTitle": "form.JobProductSelectPage.ItemTitle",
+            "searchBar": {
+              "filterOnProperties": [
+                "Name",
+                "Description"
+              ]
+            }
+          },
+          "placeholder": "form.UpsertJobProductPage.SelectProductHint",
+          "valueExpression": "pageData.ProductId",
+          "sourceExpression": "sharedData.Products",
+          "displayExpression": "pageData.Product.Name",
+          "structureExpression": "pageData.Product"
         },
-
-        
         {
           "type": "textEditor",
-          "keyboardType": "number-pad",
-          "valueExpression": "pageData.Qty",
           "title": "form.UpsertJobProductPage.Quantity",
+          "validator": [
+            {
+              "type": "expression",
+              "expression": "pageData.Qty > 0 && pageData.Qty <= 1000",
+              "errorMessage": "form.UpsertJobProductPage.QuantityMustBeAbove0"
+            }
+          ],
           "placeholder": "form.UpsertJobProductPage.QuantityHint",
-          "validator": [
-            {
-              "type": "expression",
-              "errorMessage": "form.UpsertJobProductPage.QuantityMustBeAbove0",
-              "expression": "pageData.Qty > 0 && pageData.Qty <= 1000"
-            }
-          ]
-        },
-        {
-          "type": "attachmentsEditor",
-          "sourceExpression": "pageData",
-          "title": "form.UpsertJobProductPage.AddAttachment",
-          "validator": [
-            {
-              "type": "expression",
-              "expression": "attachments.length > 0",
-              "errorMessage": "form.UpsertJobProductPage.AttachmentRequired"
-            }
-          ]
+          "keyboardType": "number-pad",
+          "valueExpression": "pageData.Qty"
         }
-      ]
+      ],
+      "title": "form.UpsertJobProductPage.InfoHeader",
+      "upsert": {
+        "saveDraft": {
+          "askWhenBack": true
+        },
+        "validator": []
+      },
+      "defaultPageData": {
+        "data": {},
+        "objectName": "JobProducts"
+      },
+      "wipeExistingData": false,
+      "pageDataExpression": "formData.JobProduct"
     }
-  }
+  },
+  "firstPage": "UpsertJobProductPage"
 }

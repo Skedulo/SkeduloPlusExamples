@@ -1,24 +1,22 @@
 {
-    "type": "GraphQl",
-    "JobProducts": {
-      "object": "JobProducts",
-      "limit": 1,
-      "fields": [
-        "UID",
-        "ProductId",
-        "ProductName",
-        "Name",
-        "Qty",
-        "CreatedDate",
-        "JobId",
-        "Product.UID",
-        "Product.Description",
-        "Product.Name"
-      ],
-      "filter": "JobId == '${jobId}'",
-      "variables": {
-        "jobId": "$it.UID",
-        "userId": "$res.UserId"
-      }
+  "type": "GraphQl",
+  "JobProduct": {
+    "limit": 1,
+    "fields": [
+      "UID",
+      "ProductId",
+      "Name",
+      "Qty",
+      "CreatedDate",
+      "JobId",
+      "CreatedById"
+    ],
+    "filter": "CreatedById == '${resourceId}' AND JobId == '${jobId}'",
+    "object": "JobProducts",
+    "orderBy": "CreatedDate DESC",
+    "variables": {
+      "jobId": "$it.UID",
+      "resourceId": "$res.UID"
     }
   }
+}

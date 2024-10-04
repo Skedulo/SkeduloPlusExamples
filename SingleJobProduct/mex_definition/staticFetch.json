@@ -1,13 +1,13 @@
 {
-    "type": "GraphQl",
-    "Products": {
-      "object": "Products",
-      "fields": [
-        "UID",
-        "Name",
-        "Description"
-      ],
-      "filter": "",
-      "variables": {}
-    }
+  "type": "GraphQl",
+  "Products": {
+    "fields": [
+      "UID",
+      "Name",
+      "Description"
+    ],
+    "filter": "",
+    "object": "Products",
+    "variables": {}
   }
+}

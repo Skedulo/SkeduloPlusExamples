@@ -1,6 +1,7 @@
 {
   "form": {
     "UpsertJobProductPage": {
+      "InfoHeader": "Add/Edit Job Product",
       "AddAttachment": "Add Attachment",
       "AttachmentRequired": "You must upload an image of the product",
       "Quantity": "Quantity",

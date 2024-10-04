@@ -1,11 +1,11 @@
 {
-  "summary": "",
   "email": "",
-  "revisionCount": 1,
-  "contextObject": "Jobs",
+  "summary": "",
   "bundleId": "",
-  "displayOrder": 0,
+  "references": {},
   "templateId": "",
-  "hasAttachments": [],
-  "references": {}
+  "displayOrder": 0,
+  "contextObject": "Jobs",
+  "revisionCount": 1,
+  "hasAttachments": []
 }
