@@ -413,6 +413,14 @@
               "caption": "form.ShowCasePage.SignatureHint",
               "readonly": "pageData.Disabled",
               "enableFullName": true
+            },
+            {
+              "type": "imageAnnotationEditor",
+              "sourceExpression": "pageData",
+              "readonly": "pageData.Disabled",
+              "caption": "form.ShowCasePage.ImageAnnotationHint",
+              "title": "form.ShowCasePage.ImageAnnotation",
+              "templateImages": ["bodymap_back", "bodymap_front", "image1", "image2"]
             }
           ]
         },
@@ -506,6 +514,39 @@
               "title": "form.ShowCasePage.ReadonlyTextViewTitle",
               "text": "form.ShowCasePage.ReadonlyTextViewText",
               "caption": "form.ShowCasePage.ReadonlyTextViewHint"
+            }
+          ]
+        },
+        {
+          "title": "form.ShowCasePage.ImageViewSection",
+          "type": "section",
+          "items": [
+            {
+              "type": "imageView",
+              "title": "form.ShowCasePage.ImageViewTitle",
+              "image": {
+                "staticResource": "image1"
+              },
+              "aspectRatio": 1.7777
+            }
+          ]
+        },
+        {
+          "title": "form.ShowCasePage.AddressSection",
+          "type": "section",
+          "items": [
+            {
+              "type": "addressEditor",
+              "title": "form.ShowCasePage.AddressTitle",
+              "placeholder": "form.ShowCasePage.AddressPlaceholder",
+              "structureExpression": "pageData.__Address",
+              "displayExpression": "pageData.__Address.Address",
+              "selectPage": {
+                "title": "form.ShowCasePage.AddressSelectPageTitle"
+              },
+              "readonly": "pageData.Disabled",
+              "caption": "form.ShowCasePage.AddressCaption"
+
             }
           ]
         }

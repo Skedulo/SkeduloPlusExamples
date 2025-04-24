@@ -50,6 +50,7 @@
       "FilesSection": "Files Components",
       "Attachments": "Attachments",
       "Signature": "Signature",
+      "ImageAnnotation": "ImageAnnotation",
       "MultiSelectProduct": "Multi Select Title",
       "MultiSelectProductHint": "Multi Select Hint",
       "HeaderTitle": "Page header title",
@@ -63,6 +64,7 @@
       "ButtonGroupThreeBtn2": "3 Buttons - 2",
       "ButtonGroupThreeBtn3": "3 Buttons - 3",
       "AttachmentsHint": "Editor allow user to add attachments.",
+      "ImageAnnotationHint": "Editor allow user to annotate images using predefined template images",
       "SignatureHint": "Signature view allow user draw signature and input their full name.",
       "SectionTitle": "Title of a section",
       "SectionBody": "Body of a section.",
@@ -75,7 +77,14 @@
       "TextViewText": "Text view content",
       "ReadonlyTextViewTitle": "Readonly text view title",
       "ReadonlyTextViewText": "Readonly text view content",
-      "ReadonlyTextViewHint": "Readonly text view hint"
+      "ReadonlyTextViewHint": "Readonly text view hint",
+      "ImageViewSection": "Image view section",
+      "ImageViewTitle": "Image view Title",
+      "AddressSection": "Address section",
+      "AddressTitle": "Address editor title",
+      "AddressSelectPageTitle": "Select an address",
+      "AddressPlaceholder": "Select an address",
+      "AddressCaption": "Editor allow users to select an address with the help of GPS and Skedulo GeoServices API. "
     },
     "ListPage": {
       "PageTitle": "Items",
