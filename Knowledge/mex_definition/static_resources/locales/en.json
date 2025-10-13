@@ -12,7 +12,7 @@
      "Name": "Question",
      "Body": "Answer",
      "Status":"Status",
-     "ButtonText": "Open form",
+     "ButtonText": "skedulox://mex/${pageData.UID}/${pageData.LaunchMobileExtension}",
      "ButtonUrl": "skedulox://mex/${pageData.UID}/${pageData.LaunchMobileExtension}",
       "MessageBox": "Note",
       "MessageBoxText": "These FAQs are read-only and provided for general guidance only. If you believe any information is outdated, incomplete, or requires clarification, please reach out to the scheduling operations team. Longer text like this will automatically be truncated in the display view; clicking on the message box will open a modal with the full text for review and interaction, demonstrating how overflow handling works in this UI component."

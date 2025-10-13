@@ -61,11 +61,11 @@
         {
   "type": "buttonGroup",
   "items": [{
-    "text": "skedulox://",
+    "text": "form.UpsertPage.ButtonText",
     "theme": "primary",
     "behavior": {
     "type": "openUrl",
-    "urlExpression": "Skedulox://"
+    "urlExpression": "form.UpsertPage.ButtonUrl"
   }
   }]
 }
