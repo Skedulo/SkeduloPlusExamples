@@ -1,0 +1,15 @@
+{
+  "type": "GraphQl",
+  "KnowledgeArticles": {
+    "object": "KnowledgeArticle",
+    "fields": [
+      "UID",
+      "Name",
+      "Body",
+      "Status",
+      "Category",
+      "LaunchMobileExtension"
+    ],
+    "filter": "Status == 'Published'"
+  }
+}

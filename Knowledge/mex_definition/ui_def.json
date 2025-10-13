@@ -1,0 +1,75 @@
+{
+  "firstPage": "ListPage",
+  "pages": {
+    "ListPage": {
+      "title": "form.ListPage.Title",
+      "type": "list",
+      "sourceExpression": "formData.KnowledgeArticles",
+      "emptyText": "form.ListPage.Empty",
+      "search": {
+        "placeholder": "form.ListPage.SearchPlaceholder",
+        "filterOnProperties": ["Knowledge.Name"]
+      },
+      "itemLayout": {
+        "type": "titleAndCaption",
+        "title": "form.ListPage.ItemTitle",
+        "caption": "form.ListPage.ItemCaption"
+      },
+      "itemClickDestination": "UpsertPage"
+    },
+    "UpsertPage": {
+      "type": "flat",
+
+      "items": [
+
+        {
+          "type": "messageBox",
+          "title": "form.UpsertPage.MessageBox",
+          "theme": "primary",
+          "text": "form.UpsertPage.MessageBoxText",
+          "numberOfLines": 2
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Name",
+          "title": "form.UpsertPage.Name",
+          "multiline": true,
+          "readonly": true
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "pageData.Body",
+          "title": "form.UpsertPage.Body",
+          "multiline": true,
+          "readonly": true
+        },
+         {
+          "type": "textEditor",
+          "valueExpression": "form.UpsertPage.ButtonText",
+          "title": "form.UpsertPage.ButtonText",
+          "multiline": true,
+          "readonly": true
+        },
+        {
+          "type": "textEditor",
+          "valueExpression": "form.UpsertPage.ButtonUrl",
+          "title": "form.UpsertPage.ButtonUrl",
+          "multiline": true,
+          "readonly": true
+        },
+       
+        {
+  "type": "buttonGroup",
+  "items": [{
+    "text": "skedulox://",
+    "theme": "primary",
+    "behavior": {
+    "type": "openUrl",
+    "urlExpression": "Skedulox://"
+  }
+  }]
+}
+      ]
+    }
+  }
+}
