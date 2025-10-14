@@ -6,7 +6,10 @@
       "Empty": "There are no contacts currently associated with this Account.",
       "SearchPlaceholder": "Search for Contacts",     
       "ItemTitle": "${item.FullName}", 
-      "ItemCaption": "Title: ${item.Title}\nPhone: ${item.Phone}"
+      "ItemCaption": "Title: ${item.Title}\nPhone: ${item.Phone}",
+      "SendEmail": "Send Email",
+      "SendSMS": "Send SMS",
+      "Phone": "Phone"
     },
     "UpsertContactPage": {
       "EditContact": "Edit Contact",
@@ -24,19 +27,15 @@
       "LastName":"Last Name",
       "LastNameTextHint":"Enter the last name of the contact",
       "LastNameEditorHint": "The last name of the contact",
-
       "Title":"Title",
       "TitleTextHint":"The contacts role within the organization",
       "TitleEditorHint": "Enter the contact's role within the organization",
-
       "Phone":"Phone",
       "PhoneTextHint":"Enter the primary phone number of the contact",
       "PhoneEditorHint": "The primary phone number of the contact",
-
       "MobilePhone":"Mobile",
       "MobilePhoneTextHint":"Enter the secondary phone number of the contact",
       "MobilePhoneEditorHint": "The secondary phone number of the contact",
-
       "Email":"Email",
       "EmailTextHint":"Enter the email address of the contact",
       "EmailEditorHint": "The email address of the contact"
