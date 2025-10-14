@@ -25,6 +25,16 @@
         "title": "form.ContactsListPage.ItemTitle",
         "caption": "form.ContactsListPage.ItemCaption"
       },
+      "itemCustomActionMenu": [
+        {
+          "text": "ButtonText",
+          "theme": "success",
+          "behavior": {
+            "type": "phone",
+            "phoneNumberExpression": "pageData.Phone"
+          }
+        }
+      ],
       "itemClickDestination": "UpsertContactPage"
     },
     "UpsertContactPage": {
