@@ -25,6 +25,29 @@
         "title": "form.ContactsListPage.ItemTitle",
         "caption": "form.ContactsListPage.ItemCaption"
       },
+      "extraActions": [
+        {
+          "title": "form.ContactsListPage.SendEmail",
+          "behavior": {
+            "type": "email",
+            "emailExpression": "item.Email"
+          }
+        },
+        {
+          "title": "form.ContactsListPage.SendSMS",
+          "behavior": {
+            "type": "sms",
+            "phoneNumberExpression": "item.MobilePhone"
+          }
+        },
+        {
+          "title": "form.ContactsListPage.Phone",
+          "behavior": {
+            "type": "phone",
+            "phoneNumberExpression": "item.MobilePhone"
+          }
+        }
+      ],
       "itemClickDestination": "UpsertContactPage"
     },
     "UpsertContactPage": {
